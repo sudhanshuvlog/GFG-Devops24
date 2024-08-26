@@ -1,4 +1,4 @@
-Install OpenSSH Server
+Install OpenSSH Server(For remote access)
 #yum install openssh-server -y
 
 Make PermitRootLogin yes and PasswordAuthentication yes
