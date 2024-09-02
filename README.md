@@ -7,4 +7,5 @@ GFG DevOps 24 batch content
 - Mario Game Repo With Dockerfile & Code - https://github.com/sudhanshuvlog/MarioGameOnDocker
 - Snake Game Repo With Dockerfile & Jenkinsfile - https://github.com/sudhanshuvlog/SnakeGame/tree/main
 - Movie Streaming App - https://github.com/sudhanshuvlog/Movie-Streaming-App-DevOps
+- K8s MERN App Deployment Project - https://github.com/sudhanshuvlog/K8s-MERN-App-Deployment.git
 
