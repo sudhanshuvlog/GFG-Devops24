@@ -1,0 +1,20 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: "Installl httpd package"
+      package:
+        name: "httpd"
+        state: present
+
+    - name: "copy webpages"
+      copy:
+        src: /index.html
+        dest: /var/www/html
+        owner: root
+        group: root
+
+    - name: "Start server"
+      service:
+          name: httpd
+          state: restarted
+          enabled: yes
