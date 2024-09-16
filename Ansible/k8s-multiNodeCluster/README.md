@@ -1,4 +1,6 @@
-# This configuration is focused on the configuration of the k8s multinode cluster using ansible on AWS, AWS Instances will be launched first by ansible, Then we will configure multinode cluster on those nodes.
+# This configuration is focused on the configuration of the k8s multinode cluster using ansible on AWS, AWS Instances will be launched first by ansible, Then we will configure k8s multinode cluster on those nodes.
+
+![ArchitectureDiagramK8s](ArchitectureDiagram.jpg)
 
 ### We are going to use Red Hat Enterprise Linux 9 (HVM), SSD Volume Type -- Free Tier Eligible
 Configure the ansible inventory file, and ansible.cfg file with the necessary details and then we are good to go.
