@@ -6,6 +6,22 @@ resource "aws_instance" "ec2" {
     Name=  var.Name
   }
   subnet_id = aws_subnet.mysubnet.id
+  count = 2
+  vpc_security_group_ids = [aws_security_group.mysg.id]
+  depends_on = [ aws_key_pair.gfg27key, aws_vpc.myvpc ]
+}
+
+resource "aws_instance" "k8s_minikube" {
+  ami                     = data.aws_ami.amiID.id
+  instance_type           = "t2.medium"
+  key_name = aws_key_pair.gfg27key.key_name
+  tags = {
+    Name=  var.Name
+  }
+  root_block_device {
+    volume_size = 10
+  }
+  subnet_id = aws_subnet.mysubnet.id
   count = 1
   vpc_security_group_ids = [aws_security_group.mysg.id]
   depends_on = [ aws_key_pair.gfg27key, aws_vpc.myvpc ]
@@ -37,4 +53,14 @@ resource "aws_security_group" "mysg" {
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
   }
+}
+
+resource "null_resource" "runmyScript" {
+  triggers = {
+    always_run = timestamp()
+  }
+  provisioner "local-exec" {
+    command = "echo hi hello > output.txt"
+  }
+  
 }

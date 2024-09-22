@@ -29,7 +29,7 @@ variable "Name" {
 
 variable "allowedPorts"{
     type = list
-    default = [ 80, 9090, 8080, 3000, 90, 22, 100, 81, 82, 83, 443 ]
+    default = [ 80, 9090, 8080, 3000, 90, 22, 100, 81, 82, 83, 443, 9100, 9323, 9104 ]
 }
 
 variable "vpc_name" {
