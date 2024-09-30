@@ -14,4 +14,6 @@ https://github.com/sudhanshuvlog/GFG-Devops24/tree/main/AWS
 - K8s MERN App Deployment Project - https://github.com/sudhanshuvlog/K8s-MERN-App-Deployment.git
 - K8s AutoScaling Practical - https://github.com/sudhanshuvlog/GFG-Devops24/tree/main/K8s/HorizentalAutoScaling
 - K8s Istio ServiceMesh - https://github.com/sudhanshuvlog/Istio-ServiceMesh-Proj
-
+- Devops Master Pipeline End to End - https://github.com/sudhanshuvlog/Devops-Master-Pipeline-End-To-End
+- Microservices App - https://github.com/sudhanshuvlog/MicroservicesApp
+- Nginx Ingress Controller - https://github.com/sudhanshuvlog/GFG-Devops24/tree/main/K8s/Ingress%20Controller
